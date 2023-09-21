@@ -68,7 +68,7 @@
             <?php
                 for($i=1;$i<=5;$i++){
                     for ($j=1;$j<=4;$j++){
-                        echo '<input type="checkbox" id="checkbox'.$i.$j.'" name="">'.'<br>';
+                        echo '<input type="checkbox" id="checkbox'.$i.$j.'" name="checkbox'.$i.$j.'">'.'<br>';
                     }
                 }
             ?>

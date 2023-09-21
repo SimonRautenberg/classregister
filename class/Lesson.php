@@ -25,6 +25,12 @@ class Lesson
      */
     private string $pmContent;
 
+    private int $method;
+
+    public function getMethod():int{
+        return $this->method;
+    }
+
     public function getId(): int
     {
         return $this->id;
@@ -58,9 +64,10 @@ class Lesson
      * @param string|null $weekday
      * @param string|null $amContent
      * @param string|null $pmContent
+     * @param int|null $method
      */
     public function __construct(int    $id = null, int $calweekId = null, string $weekday = null,
-                                string $amContent = null, string $pmContent = null)
+                                string $amContent = null, string $pmContent = null, int $method = null)
     {
         if ($id === null) {
 
@@ -70,6 +77,7 @@ class Lesson
             $this->weekday = $weekday;
             $this->amContent = $amContent;
             $this->pmContent = $pmContent;
+            $this->method= $method;
         }
     }
 
